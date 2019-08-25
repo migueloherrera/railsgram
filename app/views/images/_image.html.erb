@@ -1,6 +1,6 @@
 <div class="image">
   <figure class="figure">
-    <img src="http://nccc.ucsf.edu/wp-content/uploads/2013/10/bay6-600x400.jpg" class="figure-img img-fluid rounded">
+    <%= image_tag image.picture.thumb.url, class: 'figure-img img-fluid rounded'  %>
     <figcaption class="figure-caption">
       <%= image.description %> 
       <%= link_to 'Edit', edit_image_path(image) %>
